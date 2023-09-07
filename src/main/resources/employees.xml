@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<employeess>
+    <employee>
+        <id>1</id>
+        <firstName>User1</firstName>
+        <lastName>One</lastName>
+        <income>1320000</income>
+    </employee>
+    <employee>
+        <id>2</id>
+        <firstName>User2</firstName>
+        <lastName>Two</lastName>
+        <income>1520000</income>
+    </employee>
+
+</employeess>
