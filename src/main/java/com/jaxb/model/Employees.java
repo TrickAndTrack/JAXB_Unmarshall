@@ -1,25 +1,26 @@
 package com.jaxb.model;
 
 
+import java.io.Serializable;
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@ToString
 @XmlRootElement(name = "employees")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Employees
+public class Employees implements Serializable
 {
-    @XmlElement(name = "employee")
-    private List<Employee> employees = null;
+    @XmlElement(name = "employee_rec", required = true)
+    private List<Employee> employees ;
 
-    public List<Employee> getEmployees() {
-        return employees;
-    }
 
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
-    }
 }
