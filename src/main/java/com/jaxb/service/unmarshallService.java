@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBException;
 @Service
-public interface marshallService {
+public interface unmarshallService {
 
     public Employees Records() throws JAXBException;
 }

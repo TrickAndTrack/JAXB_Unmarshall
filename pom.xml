@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jaxb</groupId>
-	<artifactId>MarshallingAndUnMarshallingApplication</artifactId>
+	<artifactId>UnMarshalling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>marshallingAndunmarshalling</name>
 	<description>Demo project marshalling And unmarshalling .xml file data convert into JSON format</description>

@@ -2,7 +2,7 @@ package com.jaxb.service.impl;
 
 import com.jaxb.model.Employee;
 import com.jaxb.model.Employees;
-import com.jaxb.service.marshallService;
+import com.jaxb.service.unmarshallService;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBContext;
@@ -10,7 +10,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 @Service
-public class marshallServiceImpl implements marshallService {
+public class unmarshallServiceImpl implements unmarshallService {
 
     public Employees Records() throws JAXBException {
         File file = new File("C:\\Users\\Developer\\OneDrive\\Desktop\\files\\employees.xml");
