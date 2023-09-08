@@ -1,8 +1,12 @@
 package com.jaxb.service;
 
-import javax.xml.bind.JAXBException;
+import com.jaxb.model.Employees;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
+import javax.xml.bind.JAXBException;
+@Service
 public interface marshallService {
 
-    public void jsonObject() throws JAXBException;
+    public Employees jsonObject() throws JAXBException;
 }

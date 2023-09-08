@@ -5,6 +5,7 @@ import com.jaxb.model.Employees;
 import com.jaxb.service.marshallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.xml.bind.JAXBContext;
@@ -13,11 +14,13 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
 @SpringBootApplication
+@EnableAutoConfiguration
 public class MarshallingAndunmarshallingApplication {
 
-	@Autowired
-	marshallService marshallService;
 
+
+	@Autowired
+	private marshallService marshallService;
 
 	public static void main(String[] args)  {
 		SpringApplication.run(MarshallingAndunmarshallingApplication.class, args);
